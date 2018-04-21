@@ -20,10 +20,10 @@ var Counter = React.createClass({
     render: function() {
         return React.createElement('div', {className: 'counter'},
             React.createElement('h2', {}, 'Counter'),
-            React.createElement('span', {}, 'result: ' + this.state.counter),
+            React.createElement('h4', {}, 'result: ' + this.state.counter),
             React.createElement('div', {},
-                React.createElement('button', {onClick: this.increment}, '+10'),
-                React.createElement('button', {onClick: this.decrement}, '-10')
+                React.createElement('button', {onClick: this.increment, className: 'btn btn-success'}, '+10'),
+                React.createElement('button', {onClick: this.decrement, className: 'btn btn-danger'}, '-10')
             )
         )
     }
